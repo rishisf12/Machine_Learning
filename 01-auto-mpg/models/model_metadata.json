@@ -1,0 +1,22 @@
+{
+  "dataset": "Auto MPG",
+  "target": "mpg",
+  "features": [
+    "cylinders",
+    "displacement",
+    "horsepower",
+    "weight",
+    "acceleration",
+    "model_year",
+    "origin"
+  ],
+  "best_model": "SVR (RBF)",
+  "metrics": {
+    "cv_rmse": 2.975,
+    "test_mae": 1.693,
+    "test_rmse": 2.088,
+    "test_r2": 0.919
+  },
+  "n_samples": 398,
+  "loader": "joblib.load('models/best_model.joblib')"
+}
