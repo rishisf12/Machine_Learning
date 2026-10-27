@@ -1,0 +1,35 @@
+{
+  "dataset": "Titanic",
+  "target": "Survived",
+  "features": [
+    "Age",
+    "Fare",
+    "FamilySize",
+    "IsAlone",
+    "Pclass",
+    "Sex",
+    "Embarked",
+    "Title"
+  ],
+  "numeric": [
+    "Age",
+    "Fare",
+    "FamilySize",
+    "IsAlone"
+  ],
+  "categorical": [
+    "Pclass",
+    "Sex",
+    "Embarked",
+    "Title"
+  ],
+  "best_model": "Logistic Regression",
+  "metrics": {
+    "cv_accuracy": 0.819,
+    "test_accuracy": 0.838,
+    "test_f1": 0.782,
+    "test_auc": 0.876
+  },
+  "n_samples": 891,
+  "loader": "joblib.load('models/best_model.joblib')"
+}
